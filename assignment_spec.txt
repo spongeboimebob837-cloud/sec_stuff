@@ -1,0 +1,293 @@
+Assignment 1
+COS721
+2026
+Weight: 30% of your semester mark.
+Due: Monday, 14 September 2026.
+Upload to ClickUP.
+Note that this is an individual assignment; you are only allowed to submit work
+that you have done on your own.
+1 Introduction
+For this assignment you are expected to propose and evaluate toolmarks to help classify
+PDF documents, with toolmarks understood as used in my paper on the topic [1]. In this
+assignment we will refer to this paper as the underlying paper or, where the context is
+clear, simply as the paper.
+
+This introduction describes the context and concepts. While they should have a signifi-
+cant impact on the report you submit, it is possible that your report will not mention some
+of these issues at all. The expectations about the content of your assignment are provided
+in section 3 below. Also note that some technical expectations (such as maximum length
+and the font size to use are specified towards the end of this document).
+
+Let us refer to the prefixes used in the paper as loci. Hence stream-* is a locus, as is
+length-*. ‘The toolmarks you propose for this assignment should centre around two loci
+not explored in the paper — neither literally, nor in spirit. The first prohibition means
+that if you want to use the pagetype-* locus discussed in an announcement, you cannot
+call it the page-* locus, because the page-* locus is already used in the paper. ‘The second
+prohibition means that you cannot propose, say, a streamterm-* locus that reflects how
+the stream keyword is terminated, because that is exactly what the stream-* locus is used
+for.
+
+Some obvious strategies to find new loci would be to consider (a) line terminations (or,
+in general, what follows some keyword); (b) the sequence in which tokens appear (such as
+seq-* and pagetype-* from the announcement); (c) checks whether a token is present or
+absent (such as xref-* and objstm-*; and (d) usage conventions (such as length-*). You
+are encouraged to think beyond these four strategies. Some of these strategies also come
+with caveats: We noted that line terminations quickly become boring; while they are not
+
+banned, your mark for a line-termination locus is likely to be significantly lower than a
+locus that just mirrors some existing locus. However, it may be a good idea to start with
+such a simple locus, incorporate it into the ‘system’, and confirm that it does not really
+contribute. This will confirm that you understand the operation of the ‘system’. Note
+that such a confirmation will not directly contribute to your marks for the assignment; the
+confirmation is intended as a self-check to confirm to you that you do understand the way
+the ‘system’ works.
+
+Note that it is expected that you will explore some locus and initially find it interesting,
+but later determine that it is not a good choice. It seems like a good idea to prepare a
+list of potential loci so that picking another one is simple if a chosen one does not meet
+your expectations. In fact, trying a few and then writing up your best two loci seems
+worthwhile.
+
+2 Initial suitability checks
+
+Consider the length-* locus. It consists of length-absent, length-direct and length-indirect
+marks, as well as the complements of the latter two. Suppose it rather only consisted of
+length-absent and length-present. Then one document would have been associated
+with the former mark, while 999 would have been associated with the latter mark. In this
+form it clearly would not have had discriminatory power. Any mark that is too preva-
+lent does not shed much insight. A mark with low prevalence may, however, identify some
+unique aspect of a scarce tool that behaves in some unusual manner. In this particular case
+the document without a /Length is 6HTC5, which clearly is not an ‘unusual’ PDF, but not
+a PDF document at all. Another way to think about the length-* locus is that documents
+with /Length tokens will manifest as length-direct and/or length-indirect. Would
+flagging them as length-present not be redundant?
+
+A second common sense check is the nature of the locus you are considering. You
+may, for example, see /DCTDecode in a number of documents — almost 200, if my quick
+check is correct. However, when you look at the PDF reference manuals, you will find that
+/DCTDecode is closely linked to JPEG compression. Hence, such a mark may differentiate
+between documents that embed JPEG images, and those that do not. We are interested
+is marks left by the creation tool, rather than marks that depend on the content of the
+document.
+
+A third check was discussed in the announcement. Ideally marks at a locus should be
+consistent for a given tool, unless it adds discriminatory power.
+
+Most of the preceding remarks deal with making appropriate choices about the two loci
+you will propose. In many cases, these issues will not feature in your report at all.
+
+2
+
+3 Your assignment
+
+As noted, your assignment deals with proposing and assessing two loci and their associated
+marks. This section splits the task into various subtasks. Marks will be awarded for the
+subtasks; hence it is suggested that you use this section as a template for your submission.
+3.1 The loci and toolmarks
+
+Briefly name and describe the loci you selected, as well as their associated marks. A table
+listing the prevalence of the various marks will be useful. Ideally the table will suggest that
+some variety is present. Consider table 3 in the underlying paper. The observation that
+stream-cr-lf and stream-1f, respectively, represent about 66% and 33% of the dataset
+may be reason for optimism. At this stage stream-cr-other and stream-absent seem
+less useful, but are necessary to cover the entire dataset. Consider table 10. Even the
+(almost) 80/20 split turned out to be useful. Note that this check is just a rule-of-thumb
+check: some variety is necessary but not sufficient to ensure utility.
+
+3.2 Consistency of marks within tools
+
+As explained in an announcement, this task essentially requires you to perform
+
+minus class mark | we -l
+
+where class is iterated over the ten or so different classes in the paper, and mark is
+iterated over the marks associated with your proposed loci. If matters work perfectly, all
+marks associated with a locus will lead to an empty set, except for one mark that will
+yield all the documents in the class used in the calculation. Suppose your locus is called
+1-* with associated marks 1-a, 1-b and 1-c. Then you may find that class 1 in the paper
+is consistently associated with, say, 1-b. ‘Then it would be simple to report that 1-b is
+characteristic of class 1 (and, hence, also classes 2 and 3). In fact, a simple table with rows
+labelled 1-a, 1-b and 1-c may be a good starting point. The classes associated with each
+of these marks may then be provided in the second column, next to the appropriate row
+label.
+
+If the marks are inconsistent across multiple classes, it is reason for concern. One option
+is to explain these inconsistencies. Another option is to pick another locus, which may lead
+to simpler outcomes.
+
+Suppose the marks are mostly consistent. Is it possible to explain the inconsistencies?
+This may be a great opportunity to demonstrate insight; demonstrations of insight tend
+to lead to higher marks.
+
+Suppose you find inconsistencies for, say, class 1. Recall that classes 1, 2 and 3 started
+from different tools. If your marks differentiate between tools 1, 2 and 3 (or between two of
+them), it may also be very useful because the discriminatory power of the ‘system’ will be
+increased. In fact, it is quite easy to differentiate between some of the ‘compound’ classes
+
+3
+
+to better identify the (different) tools that were ‘merged’ into one bigger ‘compound’ class.
+It may be worth considering this when you start looking for loci.
+
+Ultimately, this part of your assignment may report the classes for which your toolmarks
+are consistent. It may additionally reflect on the reasons why inconsistencies are present.
+Hopefully any inconsistencies will not diminish discriminatory power. This part may be a
+good place for you to demonstrate insight.
+
+3.3 Integration with other toolmarks
+
+Use the environment provided for the underlying paper. Add your toolmarks to the marks
+directory. Regenerate the mark vectors associated with each of the 1000 documents. Re-
+generate the feature vectors and induced classes. Very little (if any) of this needs to be
+discussed in your report (unless something worth discussing emerges, which seems unlikely).
+
+Now compare the (new) induced classes with the versions that existed before you added
+your toolmarks to the environment. Discuss any differences. (As described, the process
+may guide you to a situation where the new induced classes are identical to the old ones;
+such an observation would be fine.)
+
+Next, compare the new feature vectors to the versions that existed initially. If your
+toolmarks do not appear in (at least, some of) the new vectors, something is wrong, and
+you will have to return to earlier stages of the process — perhaps even to the beginning.
+
+In which feature vectors do your toolmarks appear? If only in some of them, is it worth
+discussing? In general, these comments would probably be brief.
+
+Compare your loci with other loci in the feature vectors? Can you find any loci that
+correlate exactly with your loci? As an example, suppose every time your 1-a appears
+in a feature vector, stream-lf is also present (and vice versa). Also, whenever your 1-b
+appears, stream-cr-lf is present (and vice versa). In addition, every time your 1-c is
+present, stream-cr-other is also present (and vice versa). Then there is some specific
+correlation between 1-* and stream-*. Is this correlation explicable, or is it spurious?
+
+A looser correlation may exist where, say |-b always coincides with stream-cr-1f, but
+other marks associated with 1-* and stream-* do not match. If you do not observe the
+strict correlation from the previous paragraph, discuss your observations about any less
+strict correlation.
+
+If you cannot find any correlations between your loci and others, discuss any correlations
+that exist within the provided toolmarks. Reflect on your observations. Also attempt to
+explain why such correlations exist, but you were unable to find any that involve your loci.
+(If you only find ‘boring’ partial correlations for your loci, you are free to mention them
+and then rather discuss more interesting correlations in the provided toolmarks.)
+
+Note that various (abstract) approaches exist for finding the correlations discussed here.
+One approach would be to construct new sets, with each set named after a toolmark. As
+elements, each new set contains the classes in which the toolmark appears in the feature
+vector. One of the scripts provided with the paper performs exactly such ‘flipping’. Then
+calculate the MD5 hashes of all these sets and sort according to the digests. It will be
+simple to see which toolmarks appear in the same feature vectors. As a special case, note
+
+4
+
+that some toolmarks do not appear in any feature vectors and their sets will be empty
+here. Do not infer too much from these empty sets that all map to the same digest.
+
+For the sake of illustration, I did exactly what I described in the previous para-
+graph and created the sets in a directory called seenin. hen I executed the command
+md5sum seenin/endstream-* seenin/endobj-* | sort. ‘This produced the following
+output (to which I added some blank lines for the sake of readability):
+07c1b603cdf3b3272f951c5f8741495a seenin/endobj-lf
+07c1b603cdf3b3272f951c5f8741495a seenin/endstream-lf
+16a4d988526 1b3b4a346c8a88890a675 seenin/endobj-NO-cr-1f
+16a4d9885261b3b4a346c8a88890a675 seenin/endstream-NO-cr-lf
+Ab216bbe4bf 1d8dc1148b96c8ef1752a seenin/endobj-NO-1f
+4b216bbe4bf 1d8dc1148b96c8ef1752a seenin/endstream-NO-1f
+93b3dd5648c9deccf5aed6980c0eedO9 seenin/endobj-cr-1lf
+93b3dd5648c9deccfb5aed6980c0eedO9 seenin/endstream-cr-1lf
+acfe70e01a87ff686d6f6a7593d45dce seenin/endobj-cr-other
+acfe70e01a87ff686d6f6a7593d45dce seenin/endstream-cr-other
+aecle69b314ala5d0bd685446f9cfb25 seenin/endobj-NO-cr-other
+aecie69b314ala5d0bd685446f9cfb25 seenin/endstream-NO-cr-other
+d41d8cd98f00b204e9800998ecf8427e seenin/endobj-absent
+d41d8cd98f00b204e9800998ecf8427e seenin/endobj-other
+d41d8cd98f00b204e9800998ecf8427e seenin/endobj-space-cr
+d41d8cd98f00b204e9800998ecf8427e seenin/endobj-space-lf
+d41d8cd98f00b204e9800998ecf8427e seenin/endobj-space-other
+d41d8cd98f00b204e9800998ecf8427e seenin/endstream-space-cr
+d41d8cd98f00b204e9800998ecf8427e seenin/endstream-space-cr-lf
+d41d8cd98f00b204e9800998ecf8427e seenin/endstream-space-lf
+d41d8cd98f00b204e9800998ecf8427e seenin/endstream-space-other
+The block at the bottom (d41...27e) are all empty. Note the perfect correlation between
+how endstream and endobj are terminated with a CR, LF or CR/LF (as well as not
+terminated by these characters). Hence, strict correlation exists in the provided data.
+However, this was expected for these toolmarks and discussing this would not provide
+much new insight.
+
+5
+
+3.4 Reflection
+
+In the conclusion to your submission give a step back and reflect on your observations
+made while working on your assignment. You may have seen many opportunities that
+could have been selected as loci, or you may have struggled to even have found the two
+discussed in your report. ‘The first loci you picked, may have withstood the challenges
+posed by the assignment, or you may have determined that they were poor choices and
+had to select new ones. At this stage you should have some insight into the ease with
+which new loci (and associated toolmarks) may be selected, and may have developed some
+insights into pitfalls that have to be avoided. You may be impressed by the manner in
+which classification works and/or you may have developed some significant concerns. (If
+your first picks just worked, it may be appropriate to consider two additional loci, just to
+confirm that selection is as simple as you probably deem it.)
+
+Use this final section of your report to reflect on the usability of toolmarks (as en-
+countered in this assignment) to classify PDF documents. Illustrate points you make with
+specific examples as far as possible.
+
+4 Assessment
+
+You already know that your submission will be awarded a mark out of 30. ‘The four sections
+of your assignment will, respectively, be marked out of 5, 5, 10 and 10 marks. (In some
+cases the rubric may be adjusted; if your second section is, for example, weighted heavier
+than your final section, the second section may be marked out of 10, and the final one
+out of 5.) For each of the four parts of your answer, an impression mark will be assigned.
+This impression mark will be based on two factors: How hard or simple to execute was
+the task you set for yourself to execute, and how well did you execute it? Sometimes less
+is more: You may have to discard some really impressive goals that are too hard to report
+on: If your task is (almost) impossible and you fail to deliver, you will not do well. On the
+other hand, it is possible to select an extremely simple approach where the simplicity (and
+naivety) of the approach does not warrant a high mark. To get the best possible mark,
+plan to finish your assignment ahead of schedule and carefully reread it before submission.
+That will enable you to better judge whether the (reasonable) task that you have chosen,
+has been executed as well as possible.
+
+5 Submission
+
+1. Submit your final answer to the upload slot on clickUP. (You are allowed to submit
+
+as many reports and as often as you want; your final submission will be assessed.)
+
+2. Your report is limited to four (4) pages; only the first four pages of your submission
+
+will be marked.
+
+3. Submit your answer as an A4 PDF document.
+
+6
+
+4. Use a 12pt font as the primary font in your submission.
+
+5. Often students feel that they simply must clarify some aspect in a way that cannot
+be done within four pages. If you must, you may include up to two pages of addenda
+beyond the initial four pages. ‘They will not be marked. However, the lecturer has
+in some cases in the past briefly looked at addenda if some issue seemed particularly
+intriguing.
+
+6. It is not foreseen that references will contribute to this assignment; if you wish to
+include references, they may spill over beyond page 4 to pages that form part of the
+addenda.
+
+7. Double check that your name appears on your submission: The submissions will be
+printed to be marked and any identifying information in, for example, the file name,
+will be lost.
+
+8. The assignments will be printed in monochrome to be marked — do not rely on
+colour.
+
+Have fun!
+
+References
+[1] M.S. Olivier. On the classification of questioned PDF documents — attributing PDF
+documents to the tools that created them. Forensic Science International: Digital
+Investigation, 56:302104, June 2026.
+7

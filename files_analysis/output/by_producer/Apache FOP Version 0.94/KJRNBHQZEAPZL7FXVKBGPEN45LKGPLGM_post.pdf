@@ -1,0 +1,142 @@
+%PDF-1.4
+%клмн
+4 0 obj
+<<
+/Producer (Apache FOP Version 0.94)
+/CreationDate (D:20090603151321-04'0-480')
+>>
+endobj
+5 0 obj
+<< /N 3
+/Length 10 0 R
+/Filter /FlateDecode 
+>>
+
+endobj
+6 0 obj
+[/ICCBased 5 0 R]
+endobj
+7 0 obj
+<< /Type /Metadata
+/Subtype /XML
+/Length 11 0 R
+
+>>
+
+endobj
+9 0 obj
+<< /Length 12 0 R
+/Filter /FlateDecode 
+>>
+
+endobj
+8 0 obj
+<< /Type /Page
+/Parent 1 0 R
+/MediaBox [ 0 0 612 792 ]
+/TrimBox [ 0 0 612 792 ]
+/BleedBox [ 0 0 612 792 ]
+/Resources 3 0 R
+/Contents 9 0 R
+>>
+endobj
+10 0 obj
+2596
+endobj
+11 0 obj
+693
+endobj
+12 0 obj
+2806
+endobj
+13 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding >>
+endobj
+14 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F5
+/BaseFont /Times-Roman
+/Encoding /WinAnsiEncoding >>
+endobj
+15 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F4
+/BaseFont /Helvetica-BoldOblique
+/Encoding /WinAnsiEncoding >>
+endobj
+16 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F3
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding >>
+endobj
+17 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F7
+/BaseFont /Times-Bold
+/Encoding /WinAnsiEncoding >>
+endobj
+1 0 obj
+<< /Type /Pages
+/Count 1
+/Kids [8 0 R ] >>
+endobj
+2 0 obj
+<< /Type /Catalog
+ /Pages 1 0 R
+ /Metadata 7 0 R
+>>
+endobj
+3 0 obj
+<<
+/Font <<
+  /F1 13 0 R
+  /F5 14 0 R
+  /F4 15 0 R
+  /F3 16 0 R
+  /F7 17 0 R
+>>
+/ProcSet [ /PDF /ImageB /ImageC /Text ]
+/ColorSpace <<
+  /DefaultRGB 6 0 R
+>>
+>>
+endobj
+xref
+0 18
+0000000000 65535 f 
+0000007264 00000 n 
+0000007322 00000 n 
+0000007389 00000 n 
+0000000015 00000 n 
+0000000115 00000 n 
+0000002792 00000 n 
+0000002825 00000 n 
+0000006485 00000 n 
+0000003603 00000 n 
+0000006642 00000 n 
+0000006663 00000 n 
+0000006683 00000 n 
+0000006704 00000 n 
+0000006812 00000 n 
+0000006922 00000 n 
+0000007042 00000 n 
+0000007155 00000 n 
+trailer
+<<
+/Size 18
+/Root 2 0 R
+/Info 4 0 R
+/ID [<82E93774E7F30486B88F2068CA079433> <82E93774E7F30486B88F2068CA079433>]
+>>
+startxref
+7565
+%%EOF

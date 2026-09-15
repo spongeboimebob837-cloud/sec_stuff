@@ -1,0 +1,111 @@
+%PDF-1.4
+1 0 obj
+<<
+/Creator (Oracle10gR2 AS Reports Services)
+/CreationDate (D:20100825231741)
+/ModDate (D:20100825231741)
+/Producer (Oracle PDF driver)
+/Title (completed_contracts.pdf)
+/Author (Oracle Reports)
+>>
+endobj
+5 0 obj
+<</Length 6 0 R
+/Filter [/ASCII85Decode /FlateDecode]
+>>
+
+endobj
+6 0 obj
+447
+endobj
+7 0 obj
+<</Type /Font
+/Name /F0
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Bold
+>>
+endobj
+4 0 obj
+<<
+/Type /Page
+/MediaBox [0 0 792 612]
+/Parent 3 0 R
+/Resources <</ProcSet [ /PDF /Text ] /Font << /F0 7 0 R >> >>
+/Contents 5 0 R
+/CropBox [0 0 792 612]
+>>
+endobj
+9 0 obj
+<</Length 10 0 R
+/Filter [/ASCII85Decode /FlateDecode]
+>>
+
+endobj
+10 0 obj
+2059
+endobj
+11 0 obj
+<</Type /Font
+/Name /F1
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/BaseFont /Helvetica-Bold
+>>
+endobj
+12 0 obj
+<</Type /Font
+/Name /F2
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/BaseFont /Helvetica
+>>
+endobj
+8 0 obj
+<<
+/Type /Page
+/MediaBox [0 0 792 612]
+/Parent 3 0 R
+/Resources <</ProcSet [ /PDF /Text ] /Font << /F0 7 0 R /F1 11 0 R /F2 12 0 R >> >>
+/Contents 9 0 R
+/CropBox [0 0 792 612]
+>>
+endobj
+2 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Kids [ 
+4 0 R 8 0 R ]
+/Count 2
+>>
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000009 00000 n 
+0000003643 00000 n 
+0000003692 00000 n 
+0000000887 00000 n 
+0000000222 00000 n 
+0000000759 00000 n 
+0000000778 00000 n 
+0000003449 00000 n 
+0000001059 00000 n 
+0000003209 00000 n 
+0000003230 00000 n 
+0000003342 00000 n 
+trailer
+<<
+/Size 13
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+3758
+%%EOF

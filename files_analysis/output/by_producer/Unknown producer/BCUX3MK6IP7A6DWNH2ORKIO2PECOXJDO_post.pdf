@@ -1,0 +1,82 @@
+%PDF-1.2
+3 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+>>
+endobj
+5 0 obj
+<<
+/Length 6 0 R
+/Filter /FlateDecode
+>>
+
+endobj
+6 0 obj
+422145
+endobj
+7 0 obj
+<<
+/F0 3 0 R
+/F11 4 0 R
+>>
+endobj
+8 0 obj
+<<
+/Font 7 0 R
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+>>
+endobj
+9 0 obj
+<<
+/Type /Page
+/MediaBox [0 0 792 1224]
+/Parent 1 0 R
+/Contents 5 0 R
+/Resources 8 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Pages
+/Kids [9 0 R]
+/Count 1
+>>
+endobj
+2 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/PageMode /UseNone
+>>
+endobj
+xref
+0 10
+0000000000 65535 f
+0000422725 00000 n
+0000422789 00000 n
+0000000010 00000 n
+0000000120 00000 n
+0000000225 00000 n
+0000422453 00000 n
+0000422478 00000 n
+0000422526 00000 n
+0000422611 00000 n
+trailer
+<<
+/Size 10
+/Root 2 0 R
+>>
+startxref
+422864
+%%EOF

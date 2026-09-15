@@ -1,0 +1,17 @@
+Class,Count
+Acrobat_Distiller,358
+Acrobat_Net_Distiller,10
+Acrobat_PDFWriter,59
+Adobe_PDF_Library,44
+Capture_Scan_Plugins,43
+Corel_PDF_Engine,11
+Ghostscript,26
+MacOS_X_Quartz,9
+Microsoft_Office,36
+PD4ML,15
+PDFlib_PDI,4
+TCPDF,136
+Unknown,177
+iText,52
+libtiff_tiff2pdf,17
+mPDF,3
